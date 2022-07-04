@@ -6,3 +6,6 @@
 - installer node avec terminal
 
 ## Conf Sass
+- npm init ok
+- npm install node-sass --save-dev fait
+- sass -v nok

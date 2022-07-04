@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "responsive-mobile-web-site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laouinis/P3.git"
+  },
+  "author": "LAOUINI Slim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laouinis/P3/issues"
+  },
+  "homepage": "https://github.com/laouinis/P3#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
