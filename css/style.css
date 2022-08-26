@@ -226,6 +226,30 @@ main {
   background-image: linear-gradient(#FF79DA, #9356DC);
 }
 
+body footer {
+  background-color: #504f4f;
+  padding: 20px;
+  color: #FFFFFF;
+}
+body footer h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 20px;
+}
+body footer p, body footer a {
+  margin: 10px 0;
+}
+body footer a {
+  color: #FFFFFF;
+}
+body footer .footer-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body footer .footer-link i {
+  margin-right: 15px;
+}
+
 .loader-calc {
   display: flex;
   align-items: center;
@@ -379,30 +403,6 @@ main {
   width: auto;
   align-items: center;
   padding: 0 15px;
-}
-
-footer {
-  background-color: #504f4f;
-  padding: 20px;
-  color: #FFFFFF;
-}
-footer h2 {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 22px;
-}
-footer h3, footer p, footer a {
-  margin: 10px 0;
-}
-footer a {
-  color: #FFFFFF;
-}
-footer .footer-link {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-footer .footer-link i {
-  margin-right: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

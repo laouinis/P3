@@ -194,19 +194,6 @@ main {
     }
 }
 
-// .fa-heart {
-//     // color: #FFF;
-//     // background-color: #000;
-//     // border-radius: 50%;
-//     // padding:.2em;
-// }
-// .fa-heart::before {
-//     // content: "\f004";
-//     font-weight: bold;
-// //     transition: color 1s ease-out;
-// }
-// .fa-heart:hover::before{
-//     color: $linear-gradient;
-//     cursor: pointer;
-//     transition: color 1.5s ease-out;
-// }
+body {
+    @include mixins.footer;
+}
