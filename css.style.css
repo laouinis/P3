@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* page reset and conf */
+* {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* body conf */
+body {
+  font-family: "Roboto", sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* link conf */
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 22px;
+}
+
+main {
+  position: absolute;
+}
+
+.description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F2F2F2;
+}
+.description h2 {
+  font-size: 34px;
+  margin: 20px 0;
+  justify-content: center;
+  text-align: center;
+}
+.description p {
+  justify-items: center;
+  font-size: larger;
+  text-align: center;
+}
+
+.orbit-spinner {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fonctionnement {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 20px 60px 20px;
+}
+#fonctionnement .a:active {
+  cursor: pointer;
+}
+#fonctionnement .icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#fonctionnement .icon-1 {
+  display: flex;
+  margin-left: -18px;
+  background-color: #9356DC;
+  color: #FFFFFF;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+#fonctionnement .icon-2 {
+  display: flex;
+  height: 40px;
+  width: 40px;
+  align-items: center;
+  justify-content: center;
+  color: #807e7e;
+  font-size: 30px;
+  margin: 0 25px;
+}
+#fonctionnement .icon-2:hover {
+  color: #9356DC;
+}
+#fonctionnement .choose {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #F2F2F2;
+  border-radius: 20px;
+  width: 120%;
+}
+#fonctionnement .menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#fonctionnement .local {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.restaurants {
+  background-color: #F2F2F2;
+  height: 100%;
+}
+.restaurants h2 {
+  margin: 0;
+  padding: 30px 20px 10px;
+}
+.restaurants-container {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  background-color: #FFFFFF;
+}
+.restaurants-container-link {
+  width: 100%;
+}
+.restaurants-container img {
+  height: 180px;
+  width: 360px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.restaurants-container-photos-cards-description {
+  width: 360px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: auto;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+.restaurants-container h3 {
+  margin: 10px 0;
+}
+.restaurants-container p {
+  margin: 0 0 10px 10px;
+}
+.restaurants-container i:hover {
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+
+.loader-calc {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  opacity: 50%;
+  z-index: 1000;
+}
+
+.animations {
+  z-index: 10001;
+  position: absolute;
+  top: 50%;
+  left: 45%;
+}
+.animations .orbit-spinner {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  perspective: 800px;
+}
+.animations .orbit-spinner .orbit {
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.animations .orbit-spinner .orbit:nth-child(1) {
+  margin: auto;
+  animation: orbit-spinner-orbit-one-animation 1200ms linear infinite;
+  border-bottom: 5px solid #9356DC;
+}
+.animations .orbit-spinner .orbit:nth-child(2) {
+  right: 0%;
+  top: 0%;
+  animation: orbit-spinner-orbit-two-animation 1200ms linear infinite;
+  border-right: 5px solid #FF79DA;
+}
+.animations .orbit-spinner .orbit:nth-child(3) {
+  right: 0%;
+  bottom: 0%;
+  animation: orbit-spinner-orbit-three-animation 1200ms linear infinite;
+  border-top: 5px solid #99E2D0;
+}
+@keyframes orbit-spinner-orbit-one-animation {
+  0% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+  }
+}
+@keyframes orbit-spinner-orbit-two-animation {
+  0% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+  }
+}
+@keyframes orbit-spinner-orbit-three-animation {
+  0% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+  }
+  100% {
+    transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+  }
+}
+.animations .test-animations {
+  display: flex;
+}
+
+.button-selection {
+  display: flex;
+  align-items: center;
+}
+.button-main {
+  margin: 20px 0 60px 0;
+  color: #FFFFFF;
+  display: flex;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 0 20px;
+  height: 50px;
+  font-size: 22px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+}
+.button-fonction {
+  display: flex;
+  flex-direction: row;
+  margin: 0 15px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px #a8a5a5;
+  border-radius: 25px;
+  width: 100%;
+  margin: 10px;
+}
+
+#header .logo {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header .logo img {
+  height: auto;
+  width: 60%;
+}
+#header h1 {
+  font-size: 40px;
+  text-align: center;
+  border-bottom: solid 5px lightgray;
+  padding: 20px 0;
+  position: relative;
+  margin: 0;
+  box-shadow: 1px 1px 8px #F5F5F5;
+}
+
+.location-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0e0;
+}
+.location-bar .location__dot__icon {
+  font-size: 25px;
+  margin: 0 10px;
+}
+.location-bar .h2 {
+  display: flex;
+  font-size: 22px;
+}
+.location-bar .__dot {
+  display: flex;
+  height: auto;
+  width: auto;
+  align-items: center;
+  padding: 0 15px;
+}
+
+footer {
+  background-color: #504f4f;
+  padding: 20px;
+  color: #FFFFFF;
+}
+footer h2 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 22px;
+}
+footer h3, footer p, footer a {
+  margin: 10px 0;
+}
+footer a {
+  color: #FFFFFF;
+}
+footer .footer-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .footer-link i {
+  margin-right: 15px;
+}
+
+/*# sourceMappingURL=css.style.css.map */

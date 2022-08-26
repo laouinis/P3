@@ -1,0 +1,24 @@
+@import "variables";
+@mixin heart {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 400;
+    content: "\f004";
+    font-size: 25px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);    
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 1;
+    transition: all 200ms ease-in-out;
+}
+
+@mixin linear {
+    background-image: $linear-gradient;
+    opacity: 0.8;
+}

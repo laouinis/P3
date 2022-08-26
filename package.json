@@ -4,7 +4,8 @@
   "description": "responsive-mobile-web-site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prefix": "postcss ./css/style.css --use autoprefixer -d .css/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -12,11 +13,17 @@
   },
   "author": "LAOUINI Slim",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/laouinis/P3/issues"
   },
   "homepage": "https://github.com/laouinis/P3#readme",
   "devDependencies": {
     "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^10.0.0"
   }
 }

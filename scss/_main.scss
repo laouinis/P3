@@ -1,0 +1,212 @@
+@use "../scss/mixins.scss";
+
+main {
+    position: absolute;
+}
+
+.description {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $button-color;   
+
+        h2 {
+            font-size: 34px;
+            margin: 20px 0;
+            justify-content: center;
+            text-align: center;
+        }
+
+        p {
+            justify-items: center;
+            font-size: larger;
+            text-align: center;
+        }
+
+}
+
+.orbit-spinner {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fonctionnement {
+
+    display: flex;
+    flex-direction: column;
+    margin: 40px 20px 60px 20px;
+
+    .a:active {
+        cursor: pointer;
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .icon-1 {
+        display: flex;
+        margin-left: -18px;
+        background-color: $Primaire;
+        color: #FFFFFF;
+        height: 36px;
+        width: 36px;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .icon-2 {
+        display: flex;
+        height: 40px;
+        width: 40px;
+        align-items: center;
+        justify-content: center;
+        color: $Icon-color;
+        font-size: 30px;
+        margin: 0 25px;
+
+        &:hover {
+            color: $Primaire;
+        }
+    }
+
+    .choose {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: $button-color;
+        border-radius: 20px;
+        width: 120%;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .local {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.restaurants {
+    background-color: #F2F2F2;
+    height: 100%;
+
+    h2 {
+        margin: 0;
+        padding: 30px 20px 10px;
+    }
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 25px;
+        width: auto;
+        height: auto;
+        margin: 20px;
+        background-color: #FFFFFF;
+
+        &-link {
+            width: 100%;
+            &.new {
+                position: relative;
+            }
+
+            &.new::before {
+                content: "Nouveau";
+                position: absolute;
+                height: 30px;
+                width: 80px;
+                background-color: $Tertiaire;
+                color: darken($Tertiaire, 50%);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                right: 15px;
+                top: 15px;
+            }
+        }
+
+        img {
+            height: 180px;
+            width: 360px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        &-photos-cards-description {
+            position: relative;
+            width: 360px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: auto;
+            justify-content: space-between;
+            margin: 0 10px;
+            
+            &::before {
+                @include mixins.heart;
+                
+            }
+
+            &::after {
+                @include mixins.heart; 
+                @include mixins.linear;
+                opacity: 0;
+                color: transparent;
+                font-weight: 900;
+                
+            }
+
+            &:hover::after {
+                opacity: 1;
+                transform: translateY(-50%);
+            }
+        }
+
+        h3 {
+            margin: 10px 0;
+        }
+
+        p {
+            margin: 0 0 10px 10px;
+        }
+
+        &.icon-3 {
+
+        }
+
+        i:hover {
+            background-clip: transparent;
+            background-image: $linear-gradient;
+        }
+    }
+}
+
+// .fa-heart {
+//     // color: #FFF;
+//     // background-color: #000;
+//     // border-radius: 50%;
+//     // padding:.2em;
+// }
+// .fa-heart::before {
+//     // content: "\f004";
+//     font-weight: bold;
+// //     transition: color 1s ease-out;
+// }
+// .fa-heart:hover::before{
+//     color: $linear-gradient;
+//     cursor: pointer;
+//     transition: color 1.5s ease-out;
+// }

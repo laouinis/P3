@@ -1,0 +1,26 @@
+footer {
+    background-color: #504f4f;
+    padding: 20px;
+    color: $footer-text-color;
+
+    h2 {
+        font-family: 'Shrikhand', sans-serif;
+        font-size: 22px;
+    }
+
+    h3, p, a {
+        margin: 10px 0;
+    }
+    a {
+        color: $footer-text-color;
+    }
+
+    .footer-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        i {
+            margin-right: 15px;
+        }
+    }
+}
