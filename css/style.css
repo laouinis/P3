@@ -221,10 +221,6 @@ main {
 .restaurants-container p {
   margin: 0 0 10px 10px;
 }
-.restaurants-container i:hover {
-  background-clip: transparent;
-  background-image: linear-gradient(#FF79DA, #9356DC);
-}
 
 body footer {
   background-color: #504f4f;
