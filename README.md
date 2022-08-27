@@ -1,6 +1,28 @@
 # P3 ohmyfood web site
 
-#first step
+## Git command
+
+### git add
+
+```console 
+git add <filename>
+```
+
+### git add . <all files>
+
+```console 
+git add .
+```
+### git commit
+
+```console 
+git commit -m 'comment'
+```
+### git push
+
+```console 
+git push
+```
 
 ## Conf nodejs
 
