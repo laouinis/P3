@@ -1,4 +1,20 @@
 @import "variables";
+
+@mixin header {
+    .logo {
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img {        
+        height: auto;
+        width: 60%;
+        
+    }
+}
+
 @mixin heart {
     display: inline-block;
     font-style: normal;

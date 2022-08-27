@@ -1,51 +1,38 @@
 #header {
 
-    .logo {
-        height: 100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .logo img {        
-        height: auto;
-        width: 60%;
-        
-    }
-
-    h1 {
-        font-size: 40px;
-        text-align: center;
-        border-bottom: solid 5px lightgray;
-        padding: 20px 0;
-        position: relative;
-        margin: 0;
-        box-shadow: 1px 1px 8px #F5F5F5;
-    }
+    @include mixins.header;
+    
 }
 
-.location-bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-color: #e0e0e0;
-
-    .location__dot__icon {
-        font-size: 25px;
-        margin: 0 10px;
+.description {
+    .nav-bar {
+        // border-top: background-image: 4px solid $linear-line;
+        width: 100%;
     }
-
-    .h2 {
+    .location-bar {
         display: flex;
-        font-size: 22px;
-    }
-
-    .__dot {
-        display: flex;
-        height: auto;
-        width: auto;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        padding: 0 15px;
+        background-color: #e0e0e0;
+        flex-basis: 100%;
+    
+        .location__dot__icon {
+            font-size: 25px;
+            margin: 0 10px;
+        }
+    
+        .h2 {
+            display: flex;
+            font-size: 22px;
+        }
+    
+        .__dot {
+            display: flex;
+            height: auto;
+            width: auto;
+            align-items: center;
+            padding: 0 15px;
+        }
     }
 }

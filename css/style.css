@@ -355,7 +355,7 @@ body footer .footer-link i {
   box-shadow: 5px 5px 5px #a8a5a5;
   border-radius: 25px;
   width: 100%;
-  margin: 10px;
+  margin: 20px;
 }
 
 #header .logo {
@@ -368,32 +368,27 @@ body footer .footer-link i {
   height: auto;
   width: 60%;
 }
-#header h1 {
-  font-size: 40px;
-  text-align: center;
-  border-bottom: solid 5px lightgray;
-  padding: 20px 0;
-  position: relative;
-  margin: 0;
-  box-shadow: 1px 1px 8px #F5F5F5;
-}
 
-.location-bar {
+.description .nav-bar {
+  width: 100%;
+}
+.description .location-bar {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   background-color: #e0e0e0;
+  flex-basis: 100%;
 }
-.location-bar .location__dot__icon {
+.description .location-bar .location__dot__icon {
   font-size: 25px;
   margin: 0 10px;
 }
-.location-bar .h2 {
+.description .location-bar .h2 {
   display: flex;
   font-size: 22px;
 }
-.location-bar .__dot {
+.description .location-bar .__dot {
   display: flex;
   height: auto;
   width: auto;
