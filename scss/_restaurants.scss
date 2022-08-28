@@ -1,0 +1,31 @@
+.menus {
+    background-color: #F2F2F2;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 400px;
+
+    img {
+        height: 180px;
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+    }
+
+    h1 {
+        font-family: 'Shrikhand';
+        margin: 15px;
+    }
+
+    // &-photo {
+    //     background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
+    // }
+
+    &-container-photos-cards-description {
+        background-color: #F2F2F2;
+        border-top-left-radius: 20px;
+
+        p {
+            margin: 15px;
+        }
+    }
+}

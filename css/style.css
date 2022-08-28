@@ -70,7 +70,10 @@ main {
 #fonctionnement {
   display: flex;
   flex-direction: column;
-  margin: 40px 20px 60px 20px;
+  align-items: center;
+  margin: 40px 0px 60px 0px;
+  background-color: #FFFFFF;
+  width: 100%;
 }
 #fonctionnement .a:active {
   cursor: pointer;
@@ -355,13 +358,11 @@ body footer .footer-link i {
 .button-fonction {
   display: flex;
   flex-direction: row;
-  margin: 0 15px;
-  justify-content: center;
-  align-items: center;
   box-shadow: 5px 5px 5px #a8a5a5;
   border-radius: 25px;
-  width: 100%;
+  width: 85%;
   margin: 20px;
+  padding-left: 10px;
 }
 
 #header .logo {
@@ -400,6 +401,30 @@ body footer .footer-link i {
   width: auto;
   align-items: center;
   padding: 0 15px;
+}
+
+.menus {
+  background-color: #F2F2F2;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 400px;
+}
+.menus img {
+  height: 180px;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.menus h1 {
+  font-family: "Shrikhand";
+  margin: 15px;
+}
+.menus-container-photos-cards-description {
+  background-color: #F2F2F2;
+  border-top-left-radius: 20px;
+}
+.menus-container-photos-cards-description p {
+  margin: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
