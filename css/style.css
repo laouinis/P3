@@ -78,7 +78,6 @@ main {
 }
 #fonctionnement .a:hover {
   cursor: pointer;
-  transform: translateY(scale 1.5);
 }
 #fonctionnement .icon {
   display: flex;
@@ -357,6 +356,9 @@ body footer .footer-link i {
   background-image: linear-gradient(#FF79DA, #9356DC);
   opacity: 0.8;
 }
+.button-main:hover {
+  transform: scale(1.1);
+}
 .button-fonction {
   display: flex;
   flex-direction: row;
@@ -366,7 +368,25 @@ body footer .footer-link i {
   margin: 20px;
   padding-left: 10px;
 }
+.button-fonction:hover {
+  transform: scale(1.1);
+}
 
+.quadrado {
+  width: 100px;
+  height: 100px;
+  background: #000;
+  animation: crescendo 1.5s alternate infinite ease-in;
+}
+
+@keyframes crescendo {
+  0% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
 #header .logo {
   height: 100px;
   display: flex;
