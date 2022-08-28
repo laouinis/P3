@@ -370,6 +370,7 @@ body footer .footer-link i {
 }
 .button-fonction:hover {
   transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 
 .quadrado {
