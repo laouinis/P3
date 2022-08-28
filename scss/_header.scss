@@ -6,7 +6,9 @@
 
 .description {
     .nav-bar {
-        // border-top: background-image: 4px solid $linear-line;
+        display: flex;
+        justify-content: center;
+        border-top: 4px solid #929090;
         width: 100%;
     }
     .location-bar {
@@ -21,11 +23,25 @@
             font-size: 25px;
             margin: 0 10px;
         }
-    
-        .h2 {
+
+        input {
             display: flex;
-            font-size: 22px;
+            border: none;
+            height: 80px;
+            background-color: #e0e0e0;
+            font-size: 24px;
+            width: 50%;
+            padding-left: 15px;
+
+            &::placeholder {
+                color: #000000;
+            }
         }
+    
+        // .h2 {
+        //     display: flex;
+        //     font-size: 22px;
+        // }
     
         .__dot {
             display: flex;
