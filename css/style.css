@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* page reset and conf */
@@ -359,6 +360,23 @@ body footer .footer-link i {
 .button-main:hover {
   transform: scale(1.1);
 }
+.button-commander {
+  margin: 20px 0 60px 0;
+  color: #FFFFFF;
+  display: flex;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 0 40px;
+  height: 50px;
+  font-size: 20px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  opacity: 0.8;
+}
+.button-commander:hover {
+  transform: scale(1.1);
+}
 .button-fonction {
   display: flex;
   flex-direction: row;
@@ -535,6 +553,35 @@ body footer .footer-link i {
 .menus-container-photos-cards-description:hover::after {
   opacity: 1;
   transform: translateY(-50%);
+}
+
+.gategories {
+  display: flex;
+  flex-direction: column;
+}
+.gategories-entrées {
+  display: flex;
+  flex-direction: column;
+}
+.gategories-entrées h2 {
+  margin: 20px;
+  border-bottom: solid 2px #99E2D0;
+  width: 55px;
+}
+.gategories-entrées-list {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+  border-radius: 25px;
+  margin: 20px;
+  height: 80px;
+}
+.gategories-entrées-list h3, .gategories-entrées-list p {
+  margin: 10px 15px;
+}
+.gategories-entrées-list p {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -16,14 +16,6 @@
     }
 }
 
-
-// .logo .arrow {
-//     display: flex;
-//     justify-items: flex-start;
-//     height: 25px;
-//     width: 25px;
-// }
-
 .menus {
     background-color: #F2F2F2;
     height: 100%;
@@ -72,6 +64,39 @@
             &:hover::after {
                 opacity: 1;
                 transform: translateY(-50%);
+            }
+        }
+    }
+}
+
+.gategories {
+    display: flex;
+    flex-direction: column;
+
+    &-entrées {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            margin: 20px;
+            border-bottom: solid 2px $Tertiaire; width: 55px;
+        }
+        
+
+        &-list{
+            display: flex;
+            flex-direction: column;            
+            background-color: #FFFFFF;
+            border-radius: 25px;
+            margin: 20px;
+            height: 80px;
+
+            h3, p {
+                margin:10px 15px;
+            }
+            p {
+                display: flex;
+                justify-content: space-between;
             }
         }
     }
