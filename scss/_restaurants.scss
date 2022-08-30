@@ -1,31 +1,78 @@
+#header {
+    @include mixins.header;
+    .menu-logo {
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 20px;
+    
+        img {
+            margin-right: 65px;
+        }
+        
+    }
+}
+
+
+// .logo .arrow {
+//     display: flex;
+//     justify-items: flex-start;
+//     height: 25px;
+//     width: 25px;
+// }
+
 .menus {
     background-color: #F2F2F2;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    width: 400px;
-
-    img {
-        height: 180px;
-        width: 100%;
-        border-top-left-radius: 20px;
-        border-top-right-radius: 20px;
-    }
+    height: 100%;
 
     h1 {
         font-family: 'Shrikhand';
-        margin: 15px;
+        font-size: x-large;
+        margin: 10px 0;
     }
 
-    // &-photo {
-    //     background-image: url(../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
-    // }
-
-    &-container-photos-cards-description {
+    &-container {
+        display: flex;
+        flex-direction: column;
+        border-radius: 25px;
+        width: auto;
+        height: auto;
         background-color: #F2F2F2;
-        border-top-left-radius: 20px;
 
-        p {
-            margin: 15px;
+        img {
+            height: 180px;
+            width: 400px;
+        }
+
+        &-photos-cards-description {
+            position: relative;
+            width: 400px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: auto;
+            justify-content: space-between;
+            margin: 0 10px;
+
+            &::before {
+                @include mixins.heart;
+            }
+
+            &::after {
+                @include mixins.heart;
+                @include mixins.linear;
+                opacity: 0;
+                color: transparent;
+                font-weight: 900;
+            }
+
+            &:hover::after {
+                opacity: 1;
+                transform: translateY(-50%);
+            }
         }
     }
 }
