@@ -93,7 +93,8 @@
         h2 {
             margin: 20px;
             border-bottom: solid 2px $Tertiaire;
-            width: 55px;
+            width: 50px;
+            font-size: 20px;
         }
     }
 
@@ -109,16 +110,21 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
+        animation: card-animation 1.5s ease-in-out both;
+        @for $i from 1 through 3 {
+            &:nth-child(#{$i}) {
+                animation-delay: 50ms * $i;
+            }
+        }
 
         &-description {
             width: 90%;
             display: flex;
-            // flex: 0 1 317px;
             flex-direction: column;
-
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
+            
 
             h3 {
                 margin: 10px 10px 5px 10px;

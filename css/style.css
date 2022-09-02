@@ -348,6 +348,14 @@ body footer .footer-link i {
     transform: rotate(0);
   }
 }
+@keyframes card-animation {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .button-selection {
   display: flex;
 }
@@ -581,7 +589,8 @@ body footer .footer-link i {
 .categories-resto h2 {
   margin: 20px;
   border-bottom: solid 2px #99E2D0;
-  width: 55px;
+  width: 50px;
+  font-size: 20px;
 }
 .categories-list {
   width: 372px;
@@ -595,6 +604,16 @@ body footer .footer-link i {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  animation: card-animation 1.5s ease-in-out both;
+}
+.categories-list:nth-child(1) {
+  animation-delay: 50ms;
+}
+.categories-list:nth-child(2) {
+  animation-delay: 100ms;
+}
+.categories-list:nth-child(3) {
+  animation-delay: 150ms;
 }
 .categories-list-description {
   width: 90%;
