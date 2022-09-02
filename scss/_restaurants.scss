@@ -25,7 +25,6 @@
         display: flex;
         flex-direction: column;
         border-radius: 25px;
-        width: auto;
         height: auto;
 
         img {
@@ -39,16 +38,15 @@
 .categories {
     display: flex;
     flex-direction: column;
-    border-radius: 25px;
-    width: auto;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    width: 100%;
     height: auto;
     background-color: #F2F2F2;
     position: relative;
     display: flex;
     flex-direction: column;
     margin-top: -40px;
-    white-space: nowrap;
-    text-overflow: ellipsis;
     overflow: hidden;
 
     h1 {
@@ -65,7 +63,6 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        width: auto;
         justify-content: space-between;
         margin: 0 10px;
 
@@ -101,36 +98,38 @@
     }
 
     &-list {
+        width: 372px;
         display: flex;
         flex-direction: row;
         background-color: #FFFFFF;
         border-radius: 25px;
         margin: 20px;
-        width: 90%;
         height: 80px;
         box-shadow: $box-shadow;
-        overflow: hidden;
         white-space: nowrap;
         text-overflow: ellipsis;
-
+        overflow: hidden;
 
         &-description {
+            width: 90%;
             display: flex;
+            // flex: 0 1 317px;
             flex-direction: column;
+
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
 
             h3 {
                 margin: 10px 10px 5px 10px;
-                font-size: 22px;
+                font-size: 20px;
                 white-space: nowrap;
                 text-overflow: ellipsis;
                 overflow: hidden;
             }
 
             p {
-                font-size: 18px;
+                font-size: 16px;
                 margin: 5px 0px 10px 10px;
                 white-space: nowrap;
                 text-overflow: ellipsis;
@@ -139,8 +138,8 @@
 
             &-price {
                 display: flex;
-                margin-left: auto;
-                margin-right: 15px;
+                padding-left: 15px;
+                padding-right: 15px;
                 align-items: flex-end;
                 margin-bottom: 13px;
                 // white-space: nowrap;
@@ -150,10 +149,10 @@
         }
 
         &-check {
-            $check: 80px;
+            $check: 60px;
             margin-right: -$check;
             height: 100%;
-            width: $check;
+            flex-basis: $check;
             background-color: $Tertiaire;
             border-bottom-right-radius: 25px;
             border-top-right-radius: 25px;
@@ -161,6 +160,9 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
 
             i {
                 display: flex;
@@ -171,7 +173,8 @@
                 color: $Tertiaire;
                 align-items: center;
                 justify-content: center;
-
+                white-space: nowrap;
+                overflow: hidden;
             }
         }
 

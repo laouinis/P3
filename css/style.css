@@ -12,7 +12,8 @@
 /* body conf */
 body {
   font-family: "Roboto", sans-serif;
-  max-width: 400px;
+  min-width: 400px;
+  width: 100%;
   margin: 0 auto;
   padding: 0;
 }
@@ -494,7 +495,6 @@ body footer .footer-link i {
   display: flex;
   flex-direction: column;
   border-radius: 25px;
-  width: auto;
   height: auto;
 }
 .menus-container img {
@@ -505,16 +505,15 @@ body footer .footer-link i {
 .categories {
   display: flex;
   flex-direction: column;
-  border-radius: 25px;
-  width: auto;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
   height: auto;
   background-color: #F2F2F2;
   position: relative;
   display: flex;
   flex-direction: column;
   margin-top: -40px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
   overflow: hidden;
 }
 .categories h1 {
@@ -527,7 +526,6 @@ body footer .footer-link i {
   display: flex;
   flex-direction: row;
   align-items: center;
-  width: auto;
   justify-content: space-between;
   margin: 0 10px;
 }
@@ -586,19 +584,20 @@ body footer .footer-link i {
   width: 55px;
 }
 .categories-list {
+  width: 372px;
   display: flex;
   flex-direction: row;
   background-color: #FFFFFF;
   border-radius: 25px;
   margin: 20px;
-  width: 90%;
   height: 80px;
   box-shadow: 5px 5px 5px #a8a5a5;
-  overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .categories-list-description {
+  width: 90%;
   display: flex;
   flex-direction: column;
   white-space: nowrap;
@@ -607,13 +606,13 @@ body footer .footer-link i {
 }
 .categories-list-description h3 {
   margin: 10px 10px 5px 10px;
-  font-size: 22px;
+  font-size: 20px;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
 }
 .categories-list-description p {
-  font-size: 18px;
+  font-size: 16px;
   margin: 5px 0px 10px 10px;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -621,15 +620,15 @@ body footer .footer-link i {
 }
 .categories-list-description-price {
   display: flex;
-  margin-left: auto;
-  margin-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   align-items: flex-end;
   margin-bottom: 13px;
 }
 .categories-list-check {
-  margin-right: -80px;
+  margin-right: -60px;
   height: 100%;
-  width: 80px;
+  flex-basis: 60px;
   background-color: #99E2D0;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
@@ -637,6 +636,9 @@ body footer .footer-link i {
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .categories-list-check i {
   display: flex;
@@ -647,6 +649,8 @@ body footer .footer-link i {
   color: #99E2D0;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .categories-list:hover .categories-list-check {
   margin-right: 0;
