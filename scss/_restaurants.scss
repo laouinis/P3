@@ -99,6 +99,7 @@
     }
 
     &-list {
+        $nuberOfChild: 3;
         width: 372px;
         display: flex;
         flex-direction: row;
@@ -111,9 +112,9 @@
         text-overflow: ellipsis;
         overflow: hidden;
         animation: card-animation 1.5s ease-in-out both;
-        @for $i from 1 through 3 {
+        @for $i from 1 through $nuberOfChild {
             &:nth-child(#{$i}) {
-                animation-delay: 50ms * $i;
+                animation-delay: 100ms * $i;
             }
         }
 
