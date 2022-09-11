@@ -111,7 +111,7 @@
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        animation: card-animation 1.5s ease-in-out both;
+        animation: card-animation 1s ease-in-out both;
         @for $i from 1 through $nuberOfChild {
             &:nth-child(#{$i}) {
                 animation-delay: 100ms * $i;

@@ -8,26 +8,26 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: $button-color;   
+    background-color: $button-color;
 
-        h2 {
-            font-size: 34px;
-            margin: 20px 0;
-            justify-content: center;
-            text-align: center;
-        }
+    h2 {
+        font-size: 34px;
+        margin: 20px 10px;
+        justify-content: center;
+        text-align: center;
+    }
 
-        p {
-            justify-items: center;
-            font-size: larger;
-            text-align: center;
-        }
+    p {
+        justify-items: center;
+        font-size: larger;
+        text-align: center;
+    }
 
-        &-1 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    &-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
 }
 
@@ -47,8 +47,18 @@ main {
     background-color: #FFFFFF;
     width: 100%;
 
+    .fonctionnement-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+
     .a:hover {
-        cursor: pointer;        
+        cursor: pointer;
+    }
+
+    &.icon-2:hover {
+        color: $Primaire;
     }
 
     .icon {
@@ -78,10 +88,6 @@ main {
         color: $Icon-color;
         font-size: 30px;
         margin: 0 25px;
-
-        &:hover {
-            color: $Primaire;
-        }
     }
 
     .choose {
@@ -107,8 +113,19 @@ main {
 }
 
 .restaurants {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color: #F2F2F2;
     height: 100%;
+    width: 100%;
+
+    &-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
 
     h2 {
         margin: 0;
@@ -126,6 +143,7 @@ main {
 
         &-link {
             width: 100%;
+
             &.new {
                 position: relative;
             }
@@ -161,17 +179,17 @@ main {
             width: auto;
             justify-content: space-between;
             margin: 0 10px;
-            
+
             &::before {
-                @include mixins.heart;                
+                @include mixins.heart;
             }
 
             &::after {
-                @include mixins.heart; 
+                @include mixins.heart;
                 @include mixins.linear;
                 opacity: 0;
                 color: transparent;
-                font-weight: 900;                
+                font-weight: 900;
             }
 
             &:hover::after {
@@ -195,4 +213,182 @@ main {
 
 body {
     @include mixins.footer;
+}
+
+@media screen and (min-width: 768px) {
+    .description {
+        .nav-bar {
+            .location__dot__icon {
+                margin-left: 50px;
+            }
+
+            .location-bar {
+                justify-content: center;
+
+                input {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .button-main {
+        margin-bottom: 40px;
+    }
+
+    #fonctionnement {
+        flex-direction: column;
+
+        .fonctionnement-box {
+            align-items: center;
+            width: 100%;
+
+            .choose {
+                width: 100%;
+            }
+
+        }
+
+    }
+
+    .restaurants {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: 100%;
+
+        &-box {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: none;
+            margin: 0;
+            width: 100%;
+        }
+
+        &-container {}
+
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        &-description {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            p {
+                width: 180px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #fonctionnement {
+        .fonctionnement-box {
+            flex-direction: column;
+            justify-content: center;
+            
+            .button-fonction {
+                margin: 15px 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #fonctionnement {
+        .fonctionnement-box {
+            flex-direction: column;
+            justify-content: center;
+            
+            .button-fonction {
+                margin: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    #fonctionnement {
+        .fonctionnement-box {
+            flex-direction: row;
+            justify-content: center;
+            
+            .button-fonction {
+                margin: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    #fonctionnement {
+        .fonctionnement-box {
+            flex-direction: row;
+            justify-content: center;
+            
+            .button-fonction {
+                margin: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #fonctionnement {
+        .fonctionnement-box {
+            flex-direction: row;
+            justify-content: space-around;
+            
+            .button-fonction {
+                width: 28%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #fonctionnement {
+        .fonctionnement-box {
+            flex-direction: row;
+            justify-content: space-around;
+            
+            .button-fonction {
+                width: 24%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    #fonctionnement {
+        .fonctionnement-box {
+            flex-direction: row;
+            justify-content: space-around;
+            
+            .button-fonction {
+                width: 24%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    #fonctionnement {
+        .fonctionnement-box {
+            flex-direction: row;
+            justify-content: space-around;
+            
+            .button-fonction {
+                width: 18%;
+            }
+        }
+    }
 }

@@ -1,7 +1,7 @@
 #header {
 
     @include mixins.header;
-    
+
 }
 
 .description {
@@ -11,6 +11,7 @@
         border-top: 4px solid #929090;
         width: 100%;
     }
+
     .location-bar {
         display: flex;
         flex-direction: row;
@@ -18,7 +19,7 @@
         align-items: center;
         background-color: #e0e0e0;
         flex-basis: 100%;
-    
+
         .location__dot__icon {
             font-size: 25px;
             margin: 0 10px;
@@ -30,25 +31,94 @@
             height: 80px;
             background-color: #e0e0e0;
             font-size: 24px;
-            width: 50%;
+            width: 40%;
             padding-left: 15px;
 
             &::placeholder {
                 color: #000000;
             }
         }
-    
-        // .h2 {
-        //     display: flex;
-        //     font-size: 22px;
-        // }
-    
+
         .__dot {
             display: flex;
             height: auto;
             width: auto;
             align-items: center;
             padding: 0 15px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #header {
+        .logo {
+            img {
+                height: 55%;
+                width: 30%;
+            }
+        }
+    }
+
+    .description {
+        .nav-bar {
+            .location-bar {
+                justify-content: center;
+                input {
+                    width: 25%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .description {
+        .nav-bar {
+            .location-bar {
+                justify-content: center;
+                input {
+                    width: 18%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    .description {
+        .nav-bar {
+            .location-bar {
+                justify-content: center;
+                input {
+                    width: 16%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .description {
+        .nav-bar {
+            .location-bar {
+                justify-content: center;
+                input {
+                    width: 14%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .description {
+        .nav-bar {
+            .location-bar {
+                justify-content: center;
+                input {
+                    width: 10%;
+                }
+            }
         }
     }
 }

@@ -12,7 +12,7 @@
 /* body conf */
 body {
   font-family: "Roboto", sans-serif;
-  min-width: 400px;
+  min-width: 390px;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -46,7 +46,7 @@ main {
 }
 .description h2 {
   font-size: 34px;
-  margin: 20px 0;
+  margin: 20px 10px;
   justify-content: center;
   text-align: center;
 }
@@ -77,8 +77,15 @@ main {
   background-color: #FFFFFF;
   width: 100%;
 }
+#fonctionnement .fonctionnement-box {
+  display: flex;
+  flex-direction: column;
+}
 #fonctionnement .a:hover {
   cursor: pointer;
+}
+#fonctionnement.icon-2:hover {
+  color: #9356DC;
 }
 #fonctionnement .icon {
   display: flex;
@@ -106,9 +113,6 @@ main {
   font-size: 30px;
   margin: 0 25px;
 }
-#fonctionnement .icon-2:hover {
-  color: #9356DC;
-}
 #fonctionnement .choose {
   display: flex;
   flex-direction: row;
@@ -129,8 +133,18 @@ main {
 }
 
 .restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #F2F2F2;
   height: 100%;
+  width: 100%;
+}
+.restaurants-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
 }
 .restaurants h2 {
   margin: 0;
@@ -255,9 +269,133 @@ body footer .footer-link {
   align-items: center;
 }
 body footer .footer-link i {
-  margin-right: 15px;
+  flex-basis: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .description .nav-bar .location__dot__icon {
+    margin-left: 50px;
+  }
+  .description .nav-bar .location-bar {
+    justify-content: center;
+  }
+  .description .nav-bar .location-bar input {
+    width: 100%;
+  }
+  .button-main {
+    margin-bottom: 40px;
+  }
+  #fonctionnement {
+    flex-direction: column;
+  }
+  #fonctionnement .fonctionnement-box {
+    align-items: center;
+    width: 100%;
+  }
+  #fonctionnement .fonctionnement-box .choose {
+    width: 100%;
+  }
+  .restaurants {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .restaurants-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: none;
+    margin: 0;
+    width: 100%;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer h2 {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .footer-description p {
+    width: 180px;
+  }
+}
+@media screen and (min-width: 992px) {
+  #fonctionnement .fonctionnement-box {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #fonctionnement .fonctionnement-box .button-fonction {
+    margin: 15px 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #fonctionnement .fonctionnement-box {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #fonctionnement .fonctionnement-box .button-fonction {
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1100px) {
+  #fonctionnement .fonctionnement-box {
+    flex-direction: row;
+    justify-content: center;
+  }
+  #fonctionnement .fonctionnement-box .button-fonction {
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  #fonctionnement .fonctionnement-box {
+    flex-direction: row;
+    justify-content: center;
+  }
+  #fonctionnement .fonctionnement-box .button-fonction {
+    margin: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #fonctionnement .fonctionnement-box {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #fonctionnement .fonctionnement-box .button-fonction {
+    width: 28%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  #fonctionnement .fonctionnement-box {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #fonctionnement .fonctionnement-box .button-fonction {
+    width: 24%;
+  }
+}
+@media screen and (min-width: 1500px) {
+  #fonctionnement .fonctionnement-box {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #fonctionnement .fonctionnement-box .button-fonction {
+    width: 24%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  #fonctionnement .fonctionnement-box {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #fonctionnement .fonctionnement-box .button-fonction {
+    width: 18%;
+  }
+}
 .loader-calc {
   display: flex;
   align-items: center;
@@ -350,10 +488,12 @@ body footer .footer-link i {
 }
 @keyframes card-animation {
   0% {
-    transform: scale(0);
+    transform: translateY(50%);
+    opacity: 0;
   }
   100% {
-    transform: scale(1);
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 .button-selection {
@@ -398,13 +538,16 @@ body footer .footer-link i {
   flex-direction: row;
   box-shadow: 5px 5px 5px #a8a5a5;
   border-radius: 25px;
-  width: 85%;
-  margin: 20px;
+  width: 95%;
+  margin: 15px 15px 25px 10px;
   padding-left: 10px;
 }
 .button-fonction:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
+}
+.button-fonction:hover.icon-2 {
+  color: #9356DC;
 }
 
 .quadrado {
@@ -420,6 +563,41 @@ body footer .footer-link i {
   }
   100% {
     transform: scale(1.5);
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-fonction {
+    width: 45%;
+    margin: 15px;
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .button-fonction {
+    width: 35%;
+    margin: 15px;
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .button-fonction {
+    width: 35%;
+    margin: 15px;
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .button-fonction {
+    width: 35%;
+    margin: 15px;
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .button-fonction {
+    width: 18%;
+    margin: 15px;
+    padding-left: 10px;
   }
 }
 #header .logo {
@@ -457,7 +635,7 @@ body footer .footer-link i {
   height: 80px;
   background-color: #e0e0e0;
   font-size: 24px;
-  width: 50%;
+  width: 40%;
   padding-left: 15px;
 }
 .description .location-bar input::placeholder {
@@ -471,6 +649,50 @@ body footer .footer-link i {
   padding: 0 15px;
 }
 
+@media screen and (min-width: 768px) {
+  #header .logo img {
+    height: 55%;
+    width: 30%;
+  }
+  .description .nav-bar .location-bar {
+    justify-content: center;
+  }
+  .description .nav-bar .location-bar input {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .description .nav-bar .location-bar {
+    justify-content: center;
+  }
+  .description .nav-bar .location-bar input {
+    width: 18%;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .description .nav-bar .location-bar {
+    justify-content: center;
+  }
+  .description .nav-bar .location-bar input {
+    width: 16%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .description .nav-bar .location-bar {
+    justify-content: center;
+  }
+  .description .nav-bar .location-bar input {
+    width: 14%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .description .nav-bar .location-bar {
+    justify-content: center;
+  }
+  .description .nav-bar .location-bar input {
+    width: 10%;
+  }
+}
 #header .logo {
   height: 100px;
   display: flex;
@@ -604,7 +826,7 @@ body footer .footer-link i {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  animation: card-animation 1.5s ease-in-out both;
+  animation: card-animation 1s ease-in-out both;
 }
 .categories-list:nth-child(1) {
   animation-delay: 100ms;
