@@ -183,6 +183,7 @@ main {
   width: 360px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  object-fit: cover;
 }
 .restaurants-container-photos-cards-description {
   position: relative;
@@ -307,21 +308,22 @@ body footer .footer-link i {
     margin: 0;
     width: 100%;
   }
-  .footer {
+  #footer .footer {
     display: flex;
     flex-direction: column;
   }
-  .footer h2 {
+  #footer .footer h2 {
     display: flex;
     justify-content: center;
   }
-  .footer-description {
+  #footer .footer-description {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
-  .footer-description p {
-    width: 180px;
+  #footer .footer-description p {
+    min-width: max-content;
+    margin-left: 10px;
   }
 }
 @media screen and (min-width: 992px) {
@@ -608,7 +610,7 @@ body footer .footer-link i {
 }
 #header img {
   height: auto;
-  width: 60%;
+  width: 50%;
 }
 
 .description .nav-bar {
@@ -650,9 +652,16 @@ body footer .footer-link i {
 }
 
 @media screen and (min-width: 768px) {
+  #header {
+    width: 100%;
+    margin-right: 0;
+  }
   #header .logo img {
     height: 55%;
     width: 30%;
+  }
+  #header .menu-logo {
+    margin: 0;
   }
   .description .nav-bar .location-bar {
     justify-content: center;
@@ -701,7 +710,7 @@ body footer .footer-link i {
 }
 #header img {
   height: auto;
-  width: 60%;
+  width: 50%;
 }
 #header .menu-logo {
   height: 100px;
@@ -726,10 +735,16 @@ body footer .footer-link i {
   flex-direction: column;
   border-radius: 25px;
   height: auto;
+  margin: 0;
 }
-.menus-container img {
-  height: 180px;
+.menus-photo {
+  height: 280px;
   width: 100%;
+}
+.menus-photo img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .categories {
@@ -873,7 +888,7 @@ body footer .footer-link i {
   background-color: #99E2D0;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
-  transition: margin-righ 0.5s;
+  transition: margin-right 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -898,6 +913,166 @@ body footer .footer-link i {
 }
 .categories-list:hover i {
   animation: check-animation 1s ease-in-out;
+}
+
+#footer .menu-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+@media screen and (min-width: 500px) {
+  #header {
+    width: 100%;
+    margin: 0;
+  }
+  .menus {
+    width: 100%;
+  }
+  .menus-container {
+    width: 100%;
+    margin: 0;
+  }
+  .menus .categories-title {
+    width: 96%;
+  }
+  .menus .categories-resto {
+    width: 98%;
+  }
+  .menus .categories-resto-list {
+    width: 100%;
+  }
+  .menus .categories-list {
+    width: 96%;
+  }
+  .menus .categories-list-description {
+    width: 93%;
+  }
+  .menus .categories-container {
+    width: 96%;
+    margin: 0;
+  }
+  .categories {
+    width: 100%;
+  }
+  #menu-footer {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  #header {
+    width: 100%;
+    margin: 0;
+  }
+  .menus {
+    width: 100%;
+  }
+  .menus-container {
+    width: 100%;
+    margin: 0;
+  }
+  .menus .categories-title {
+    width: 98%;
+  }
+  .menus .categories-resto {
+    width: 100%;
+  }
+  .menus .categories-resto-list {
+    width: 100%;
+  }
+  .menus .categories-list-description {
+    width: 101%;
+  }
+  .menus .categories-container {
+    width: 96%;
+    margin: 0;
+  }
+  .categories {
+    width: 100%;
+  }
+  #menu-footer {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  #header {
+    width: 100%;
+    margin: 0;
+  }
+  .menus {
+    width: 100%;
+  }
+  .menus-container {
+    width: 100%;
+    margin: 0;
+  }
+  .menus .categories-title {
+    width: 98%;
+  }
+  .menus .categories-resto {
+    width: 100%;
+  }
+  .menus .categories-resto-list {
+    width: 100%;
+  }
+  .menus .categories-list {
+    width: 96%;
+  }
+  .menus .categories-list-description {
+    width: 101%;
+  }
+  .menus .categories-container {
+    width: 96%;
+    margin: 0;
+  }
+  #menu-footer {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 993px) {
+  #header {
+    width: 100%;
+    margin: 0;
+  }
+  .categories-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .menus {
+    width: 100%;
+  }
+  .menus-container {
+    width: 100%;
+    margin: 0;
+  }
+  .menus .categories-title {
+    width: 98%;
+  }
+  .menus .categories-resto {
+    width: 30%;
+  }
+  .menus .categories-resto-list {
+    width: 100%;
+  }
+  .menus .categories-list {
+    width: 7;
+  }
+  .menus .categories-list-description {
+    width: 101%;
+  }
+  .menus .categories-container {
+    width: 96%;
+    margin: 0;
+  }
+  #menu-footer {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

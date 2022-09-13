@@ -168,6 +168,7 @@ main {
             width: 360px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
+            object-fit: cover;
         }
 
         &-photos-cards-description {
@@ -246,9 +247,7 @@ body {
             .choose {
                 width: 100%;
             }
-
         }
-
     }
 
     .restaurants {
@@ -263,30 +262,41 @@ body {
             margin: 0;
             width: 100%;
         }
-
-        &-container {}
-
     }
 
-    .footer {
-        display: flex;
-        flex-direction: column;
+    
 
-        h2 {
+    #footer {
+        .footer {
             display: flex;
-            justify-content: center;
-        }
+            flex-direction: column;
 
-        &-description {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-
-            p {
-                width: 180px;
+            &-link {
+                // display: flex;
+                // flex-direction: row;
+                // flex-wrap: wrap;
+            }
+    
+            h2 {
+                display: flex;
+                justify-content: center;
+            }
+    
+            &-description {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                // flex-basis: content;
+                // flex-wrap: wrap;
+    
+                p {
+                    min-width: max-content;
+                    margin-left: 10px;
+                }
             }
         }
     }
+    
 }
 
 @media screen and (min-width: 992px) {

@@ -50,11 +50,21 @@
 }
 
 @media screen and (min-width: 768px) {
+    
     #header {
+        width: 100%;
+        margin-right: 0;
+
         .logo {
             img {
                 height: 55%;
                 width: 30%;
+            }
+        }
+
+        .menu {
+            &-logo {
+                margin: 0;
             }
         }
     }
@@ -63,6 +73,7 @@
         .nav-bar {
             .location-bar {
                 justify-content: center;
+
                 input {
                     width: 25%;
                 }
@@ -76,6 +87,7 @@
         .nav-bar {
             .location-bar {
                 justify-content: center;
+
                 input {
                     width: 18%;
                 }
@@ -89,6 +101,7 @@
         .nav-bar {
             .location-bar {
                 justify-content: center;
+
                 input {
                     width: 16%;
                 }
@@ -102,6 +115,7 @@
         .nav-bar {
             .location-bar {
                 justify-content: center;
+
                 input {
                     width: 14%;
                 }
@@ -115,6 +129,7 @@
         .nav-bar {
             .location-bar {
                 justify-content: center;
+
                 input {
                     width: 10%;
                 }
