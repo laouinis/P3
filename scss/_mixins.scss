@@ -1,5 +1,6 @@
 @import "variables";
 
+/* header mixin conf */
 @mixin header {
     .logo {
         height: 100px;
@@ -13,7 +14,7 @@
         width: 50%        
     }
 }
-
+ /* heart mixin conf */
 @mixin heart {
     display: inline-block;
     font-style: normal;
@@ -33,6 +34,7 @@
     transition: all 200ms ease-in-out;
 }
 
+/* heart mixin animation conf */
 @mixin heart-animated {
     @include heart;    
     position: relative;
@@ -62,11 +64,13 @@
     }
 }
 
+/* linear gradient mixin conf */
 @mixin linear {
     background-image: $linear-gradient;
     opacity: 0.8;
 }
 
+/* footer mixin conf */
 @mixin footer {
     footer {
         background-color: #504f4f;

@@ -1,7 +1,9 @@
+/* main page style */
 main {
     position: absolute;
 }
 
+/* page style */
 .description {
 
     position: relative;
@@ -31,6 +33,7 @@ main {
 
 }
 
+/* page loader */
 .orbit-spinner {
     height: 100px;
     display: flex;
@@ -38,6 +41,7 @@ main {
     align-items: center;
 }
 
+/* selection section & button style conf */
 #fonctionnement {
     display: flex;
     flex-direction: column;
@@ -51,7 +55,6 @@ main {
         display: flex;
         flex-direction: column;
     }
-
 
     .a:hover {
         cursor: pointer;
@@ -112,6 +115,7 @@ main {
     }
 }
 
+/* rstaurants card style */
 .restaurants {
     display: flex;
     flex-direction: column;
@@ -144,6 +148,7 @@ main {
         &-link {
             width: 100%;
 
+            /* Nouveau little card conf */
             &.new {
                 position: relative;
             }
@@ -181,6 +186,7 @@ main {
             justify-content: space-between;
             margin: 0 10px;
 
+            /* heart hover conf */
             &::before {
                 @include mixins.heart;
             }
@@ -208,14 +214,15 @@ main {
             display: flex;
             justify-items: flex-start
         }
-
     }
 }
 
+/* footer mixin inculding */
 body {
     @include mixins.footer;
 }
 
+/* smart phone & tablette conf */
 @media screen and (min-width: 768px) {
     .description {
         .nav-bar {
@@ -262,21 +269,13 @@ body {
             margin: 0;
             width: 100%;
         }
-    }
-
-    
+    }    
 
     #footer {
         .footer {
             display: flex;
             flex-direction: column;
-
-            &-link {
-                // display: flex;
-                // flex-direction: row;
-                // flex-wrap: wrap;
-            }
-    
+                
             h2 {
                 display: flex;
                 justify-content: center;
@@ -286,8 +285,6 @@ body {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-                // flex-basis: content;
-                // flex-wrap: wrap;
     
                 p {
                     min-width: max-content;
@@ -298,7 +295,7 @@ body {
     }
     
 }
-
+ /* desktop conf */
 @media screen and (min-width: 992px) {
     #fonctionnement {
         .fonctionnement-box {

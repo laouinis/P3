@@ -11,7 +11,7 @@
         margin: 0 20px;
 
         img {
-            margin-right: 65px;
+            margin-right: 75px;
         }
     }
 }
@@ -26,7 +26,7 @@
         flex-direction: column;
         border-radius: 25px;
         height: auto;
-        margin: 0;        
+        margin: 0;
     }
 
     &-photo {
@@ -200,9 +200,7 @@
 }
 
 #footer {
-
     .menu {
-
         &-footer {
             display: flex;
             flex-direction: column;
@@ -212,12 +210,24 @@
     }
 }
 
-
-
 @media screen and (min-width: 500px) {
     #header {
         width: 100%;
         margin: 0;
+
+        .menu-logo {
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 20px;
+
+            img {
+                margin-right: calc(75px + 10px);
+            }
+        }
     }
 
     .menus {
@@ -236,6 +246,7 @@
 
             &-resto {
                 width: 98%;
+
                 &-list {
                     width: 100%;
                 }
@@ -243,11 +254,10 @@
 
             &-list {
                 width: 96%;
-               
+
                 &-description {
                     width: 93%;
                 }
-
             }
 
             &-container {
@@ -271,6 +281,20 @@
     #header {
         width: 100%;
         margin: 0;
+
+        .menu-logo {
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 20px;
+
+            img {
+                margin-right: calc(75px + 14%);
+            }
+        }
     }
 
     .menus {
@@ -289,18 +313,16 @@
 
             &-resto {
                 width: 100%;
+
                 &-list {
                     width: 100%;
                 }
             }
 
             &-list {
-                // width: 96%;
-               
                 &-description {
                     width: calc(100% + 1%);
                 }
-
             }
 
             &-container {
@@ -324,6 +346,21 @@
     #header {
         width: 100%;
         margin: 0;
+
+        .menu-logo {
+            height: 100px;
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 20px;
+
+            img {
+                margin-right: calc(75px + 25%);
+                height: 80px;
+            }
+        }
     }
 
     .menus {
@@ -342,6 +379,7 @@
 
             &-resto {
                 width: 100%;
+
                 &-list {
                     width: 100%;
                 }
@@ -349,7 +387,7 @@
 
             &-list {
                 width: 96%;
-               
+
                 &-description {
                     width: calc(100% + 1%);
                 }
@@ -378,8 +416,9 @@
     .categories-box {
         display: flex;
         flex-direction: row;
-justify-content: space-around;
+        justify-content: space-around;
     }
+
     .menus {
         width: 100%;
 
@@ -396,6 +435,7 @@ justify-content: space-around;
 
             &-resto {
                 width: 30%;
+
                 &-list {
                     width: 100%;
                 }
@@ -403,7 +443,7 @@ justify-content: space-around;
 
             &-list {
                 width: 7;
-               
+
                 &-description {
                     width: calc(100% + 1%);
                 }

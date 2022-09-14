@@ -1,3 +1,4 @@
+/* buttons conf */
 .button {
     &-selection {
         display: flex;
@@ -56,9 +57,7 @@
         &:hover.icon-2 {
             color: $Primaire;
         }
-
     }
-
 }
 
 .quadrado {
@@ -68,6 +67,7 @@
     animation: crescendo 1.5s alternate infinite ease-in;
 }
 
+/* buttons scale animation conf */
 @keyframes crescendo {
     0% {
         transform: scale(.8);
@@ -78,6 +78,7 @@
     }
 }
 
+/* buttons mediaqueries conf */
 @media screen and (min-width: 768px) {
     .button {  
         &-fonction {
