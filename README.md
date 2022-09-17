@@ -43,3 +43,6 @@ git push
 - création de mixins et de variables
 - mettre en place le css avec scss
 - mettre en place le page loader et son animation
+- conception des pages de menus en HTML
+- faire le style des pages menus en css avec les animations 
+- pofiner tous les détails du code HTML et CSS selon le cahier de charge
