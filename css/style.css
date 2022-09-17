@@ -325,7 +325,6 @@ body footer .footer-link i {
   .restaurants-box {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: none;
     margin: 0;
     width: 100%;
   }
@@ -739,10 +738,10 @@ body footer .footer-link i {
   align-content: center;
   justify-content: space-between;
   align-items: center;
-  margin: 0 20px;
+  margin: 0 0 0 20px;
 }
 #header .menu-logo img {
-  margin-right: 75px;
+  margin-right: 100px;
 }
 
 .menus {
@@ -957,7 +956,9 @@ body footer .footer-link i {
     margin: 0 20px;
   }
   #header .menu-logo img {
-    margin-right: 85px;
+    margin-right: 184px;
+    height: 55%;
+    width: 30%;
   }
   .menus {
     width: 100%;
@@ -1008,7 +1009,9 @@ body footer .footer-link i {
     margin: 0 20px;
   }
   #header .menu-logo img {
-    margin-right: calc(75px + 14%);
+    margin-right: calc(100px + 23%);
+    height: 55%;
+    width: 30%;
   }
   .menus {
     width: 100%;
@@ -1056,8 +1059,9 @@ body footer .footer-link i {
     margin: 0 20px;
   }
   #header .menu-logo img {
-    margin-right: calc(75px + 25%);
-    height: 80px;
+    margin-right: calc(180px + 50%);
+    height: 55%;
+    width: 30%;
   }
   .menus {
     width: 100%;
@@ -1079,7 +1083,7 @@ body footer .footer-link i {
     width: 96%;
   }
   .menus .categories-list-description {
-    width: 101%;
+    width: 108%;
   }
   .menus .categories-container {
     width: 96%;
@@ -1094,6 +1098,20 @@ body footer .footer-link i {
   #header {
     width: 100%;
     margin: 0;
+  }
+  #header .menu-logo {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+  }
+  #header .menu-logo img {
+    margin-right: calc(180px + 10%);
+    height: 55%;
+    width: 30%;
   }
   .categories-box {
     display: flex;
@@ -1117,7 +1135,62 @@ body footer .footer-link i {
     width: 100%;
   }
   .menus .categories-list {
-    width: 7;
+    width: 95%;
+  }
+  .menus .categories-list-description {
+    width: 101%;
+  }
+  .menus .categories-container {
+    width: 96%;
+    margin: 0;
+  }
+  #menu-footer {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #header {
+    width: 100%;
+    margin: 0;
+  }
+  #header .menu-logo {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px;
+  }
+  #header .menu-logo img {
+    margin-right: calc(180px + 24%);
+    height: 55%;
+    width: 30%;
+  }
+  .categories-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .menus {
+    width: 100%;
+  }
+  .menus-container {
+    width: 100%;
+    margin: 0;
+  }
+  .menus .categories-title {
+    width: 98%;
+  }
+  .menus .categories-resto {
+    width: 30%;
+  }
+  .menus .categories-resto-list {
+    width: 100%;
+  }
+  .menus .categories-list {
+    width: 95%;
   }
   .menus .categories-list-description {
     width: 101%;
