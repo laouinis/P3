@@ -15,10 +15,12 @@
         padding: 0 20px;
         height: 50px;
         font-size: 20px;
+        box-shadow: $box-shadow;
         @include mixins.linear;
 
         &:hover {
             transform: scale(1.1);
+            filter: brightness(1.3);
         }
     }
 
@@ -33,10 +35,12 @@
         padding: 0 40px;
         height: 50px;
         font-size: 20px;
+        box-shadow: $box-shadow;
         @include mixins.linear;
 
         &:hover {
             transform: scale(1.1);
+            filter: brightness(1.3);
         }
     }
 
@@ -47,24 +51,11 @@
         border-radius: 25px;
         width: 95%;
         margin: 15px 15px 25px 10px;
-        padding-left: 10px;
 
         &:hover {
             transform: scale(1.1);
-            -webkit-transform: scale(1.1);
-        }
-
-        &:hover.icon-2 {
-            color: $Primaire;
         }
     }
-}
-
-.quadrado {
-    width: 100px;
-    height: 100px;
-    background: #000;
-    animation: crescendo 1.5s alternate infinite ease-in;
 }
 
 /* buttons scale animation conf */
@@ -80,51 +71,55 @@
 
 /* buttons mediaqueries conf */
 @media screen and (min-width: 768px) {
-    .button {  
+    .button {
         &-fonction {
             width: 45%;
             margin: 15px;
-            padding-left: 10px;    
-        }    
-    }    
+        }
+    }
+}
+
+@media screen and (min-width: 780px) {
+    .button {
+        &-fonction {
+            width: 41%;
+            margin: 15px;
+        }
+    }
 }
 
 @media screen and (min-width: 992px) {
-    .button {  
+    .button {
         &-fonction {
             width: 35%;
             margin: 15px;
-            padding-left: 10px;    
-        }    
-    }    
+        }
+    }
 }
 
 @media screen and (min-width: 1024px) {
-    .button {  
+    .button {
         &-fonction {
             width: 35%;
             margin: 15px;
-            padding-left: 10px;    
-        }    
-    }    
+        }
+    }
 }
 
 @media screen and (min-width: 1180px) {
-    .button {  
+    .button {
         &-fonction {
             width: 35%;
             margin: 15px;
-            padding-left: 10px;    
-        }    
-    }    
+        }
+    }
 }
 
 @media screen and (min-width: 1500px) {
-    .button {  
+    .button {
         &-fonction {
             width: 18%;
             margin: 15px;
-            padding-left: 10px;    
-        }    
-    }    
+        }
+    }
 }

@@ -94,9 +94,6 @@ main {
 #fonctionnement .a:hover {
   cursor: pointer;
 }
-#fonctionnement.icon-2:hover {
-  color: #9356DC;
-}
 #fonctionnement .icon {
   display: flex;
   flex-direction: row;
@@ -131,6 +128,9 @@ main {
   border-radius: 20px;
   width: 120%;
 }
+#fonctionnement .choose:hover .icon-2 {
+  color: #9356DC;
+}
 #fonctionnement .menu {
   display: flex;
   flex-direction: row;
@@ -150,6 +150,7 @@ main {
   background-color: #F2F2F2;
   height: 100%;
   width: 100%;
+  margin-bottom: 15px;
 }
 .restaurants-box {
   display: flex;
@@ -169,6 +170,11 @@ main {
   height: auto;
   margin: 20px;
   background-color: #FFFFFF;
+  box-shadow: 5px 5px 5px #a8a5a5;
+}
+.restaurants-container:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
 }
 .restaurants-container-link {
   width: 100%;
@@ -423,8 +429,8 @@ body footer .footer-link i {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #FFFFFF;
-  opacity: 70%;
+  background-color: #8b8b8b;
+  opacity: 85%;
   z-index: 1000;
   animation: loader 1500ms 3s forwards;
 }
@@ -529,11 +535,13 @@ body footer .footer-link i {
   padding: 0 20px;
   height: 50px;
   font-size: 20px;
+  box-shadow: 5px 5px 5px #a8a5a5;
   background-image: linear-gradient(#FF79DA, #9356DC);
   opacity: 0.8;
 }
 .button-main:hover {
   transform: scale(1.1);
+  filter: brightness(1.3);
 }
 .button-commander {
   margin: 20px 0 60px 0;
@@ -546,11 +554,13 @@ body footer .footer-link i {
   padding: 0 40px;
   height: 50px;
   font-size: 20px;
+  box-shadow: 5px 5px 5px #a8a5a5;
   background-image: linear-gradient(#FF79DA, #9356DC);
   opacity: 0.8;
 }
 .button-commander:hover {
   transform: scale(1.1);
+  filter: brightness(1.3);
 }
 .button-fonction {
   display: flex;
@@ -559,21 +569,9 @@ body footer .footer-link i {
   border-radius: 25px;
   width: 95%;
   margin: 15px 15px 25px 10px;
-  padding-left: 10px;
 }
 .button-fonction:hover {
   transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-}
-.button-fonction:hover.icon-2 {
-  color: #9356DC;
-}
-
-.quadrado {
-  width: 100px;
-  height: 100px;
-  background: #000;
-  animation: crescendo 1.5s alternate infinite ease-in;
 }
 
 /* buttons scale animation conf */
@@ -590,35 +588,36 @@ body footer .footer-link i {
   .button-fonction {
     width: 45%;
     margin: 15px;
-    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 780px) {
+  .button-fonction {
+    width: 41%;
+    margin: 15px;
   }
 }
 @media screen and (min-width: 992px) {
   .button-fonction {
     width: 35%;
     margin: 15px;
-    padding-left: 10px;
   }
 }
 @media screen and (min-width: 1024px) {
   .button-fonction {
     width: 35%;
     margin: 15px;
-    padding-left: 10px;
   }
 }
 @media screen and (min-width: 1180px) {
   .button-fonction {
     width: 35%;
     margin: 15px;
-    padding-left: 10px;
   }
 }
 @media screen and (min-width: 1500px) {
   .button-fonction {
     width: 18%;
     margin: 15px;
-    padding-left: 10px;
   }
 }
 /* header style */

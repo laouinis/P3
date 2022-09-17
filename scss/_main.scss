@@ -60,10 +60,6 @@ main {
         cursor: pointer;
     }
 
-    &.icon-2:hover {
-        color: $Primaire;
-    }
-
     .icon {
         display: flex;
         flex-direction: row;
@@ -100,6 +96,10 @@ main {
         background-color: $button-color;
         border-radius: 20px;
         width: 120%;
+
+        &:hover .icon-2 {
+            color: $Primaire;
+        }
     }
 
     .menu {
@@ -123,6 +123,7 @@ main {
     background-color: #F2F2F2;
     height: 100%;
     width: 100%;
+    margin-bottom: 15px;
 
     &-box {
         display: flex;
@@ -144,6 +145,12 @@ main {
         height: auto;
         margin: 20px;
         background-color: #FFFFFF;
+        box-shadow: $box-shadow;
+
+        &:hover {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+        }
 
         &-link {
             width: 100%;
@@ -269,23 +276,23 @@ body {
             margin: 0;
             width: 100%;
         }
-    }    
+    }
 
     #footer {
         .footer {
             display: flex;
             flex-direction: column;
-                
+
             h2 {
                 display: flex;
                 justify-content: center;
             }
-    
+
             &-description {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
-    
+
                 p {
                     min-width: max-content;
                     margin-left: 10px;
@@ -293,15 +300,16 @@ body {
             }
         }
     }
-    
+
 }
- /* desktop conf */
+
+/* desktop conf */
 @media screen and (min-width: 992px) {
     #fonctionnement {
         .fonctionnement-box {
             flex-direction: column;
             justify-content: center;
-            
+
             .button-fonction {
                 margin: 15px 0;
             }
@@ -314,7 +322,7 @@ body {
         .fonctionnement-box {
             flex-direction: column;
             justify-content: center;
-            
+
             .button-fonction {
                 margin: 15px;
             }
@@ -327,7 +335,7 @@ body {
         .fonctionnement-box {
             flex-direction: row;
             justify-content: center;
-            
+
             .button-fonction {
                 margin: 15px;
             }
@@ -340,7 +348,7 @@ body {
         .fonctionnement-box {
             flex-direction: row;
             justify-content: center;
-            
+
             .button-fonction {
                 margin: 15px;
             }
@@ -353,7 +361,7 @@ body {
         .fonctionnement-box {
             flex-direction: row;
             justify-content: space-around;
-            
+
             .button-fonction {
                 width: 28%;
             }
@@ -366,7 +374,7 @@ body {
         .fonctionnement-box {
             flex-direction: row;
             justify-content: space-around;
-            
+
             .button-fonction {
                 width: 24%;
             }
@@ -379,7 +387,7 @@ body {
         .fonctionnement-box {
             flex-direction: row;
             justify-content: space-around;
-            
+
             .button-fonction {
                 width: 24%;
             }
@@ -392,7 +400,7 @@ body {
         .fonctionnement-box {
             flex-direction: row;
             justify-content: space-around;
-            
+
             .button-fonction {
                 width: 18%;
             }
