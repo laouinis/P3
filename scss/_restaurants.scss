@@ -93,6 +93,14 @@
     &-resto {
         display: flex;
         flex-direction: column;
+        $nuberOfChild: 3;
+        animation: card-animation 1s ease-in-out both;
+
+        @for $i from 0 through $nuberOfChild {
+            &:nth-child(#{$i}) {
+                animation-delay: 100ms * $i;
+            }
+        }
 
         h2 {
             margin: 20px;
@@ -119,7 +127,7 @@
 
         @for $i from 1 through $nuberOfChild {
             &:nth-child(#{$i}) {
-                animation-delay: 100ms * $i;
+                animation-delay: 300ms * $i;
             }
         }
 
