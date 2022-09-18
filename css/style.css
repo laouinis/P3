@@ -429,7 +429,7 @@ body footer .footer-link i {
   width: 100%;
   height: 100%;
   background-color: #8b8b8b;
-  opacity: 85%;
+  opacity: 95%;
   z-index: 1000;
   animation: loader 1500ms 3s forwards;
 }
