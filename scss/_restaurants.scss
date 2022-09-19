@@ -1,3 +1,7 @@
+main {
+    position: absolute;
+}
+
 #header {
     @include mixins.header;
 

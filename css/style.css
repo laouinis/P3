@@ -19,7 +19,7 @@
 body {
   font-family: "Roboto", sans-serif;
   min-width: 390px;
-  max-width: 1920px;
+  max-width: 1900px;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -635,7 +635,7 @@ body footer .footer-link i {
 .description .nav-bar {
   display: flex;
   justify-content: center;
-  border-top: 4px solid #929090;
+  border-top: 4px solid #c2bfbf;
   width: 100%;
 }
 .description .location-bar {
@@ -722,6 +722,10 @@ body footer .footer-link i {
     width: 10%;
   }
 }
+main {
+  position: absolute;
+}
+
 #header .logo {
   height: 100px;
   display: flex;
