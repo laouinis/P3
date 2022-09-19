@@ -231,7 +231,7 @@ main {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 200ms ease-in-out;
+  transition: all 600ms ease-in-out;
 }
 .restaurants-container-photos-cards-description::after {
   display: inline-block;
@@ -249,7 +249,7 @@ main {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 200ms ease-in-out;
+  transition: all 600ms ease-in-out;
   background-image: linear-gradient(#FF79DA, #9356DC);
   opacity: 0.8;
   opacity: 0;
@@ -814,7 +814,7 @@ main {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 200ms ease-in-out;
+  transition: all 600ms ease-in-out;
 }
 .categories-title::after {
   display: inline-block;
@@ -832,7 +832,7 @@ main {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 1;
-  transition: all 200ms ease-in-out;
+  transition: all 600ms ease-in-out;
   background-image: linear-gradient(#FF79DA, #9356DC);
   opacity: 0.8;
   opacity: 0;
