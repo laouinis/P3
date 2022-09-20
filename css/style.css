@@ -19,7 +19,6 @@
 body {
   font-family: "Roboto", sans-serif;
   min-width: 390px;
-  max-width: 1900px;
   width: 100%;
   margin: 0 auto;
   padding: 0;
@@ -741,12 +740,18 @@ main {
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  margin: 0 0 0 20px;
 }
 #header .menu-logo img {
-  margin-right: 100px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#header .menu-logo .image {
+  height: auto;
+  width: 200px;
+  margin: auto;
 }
 
 .menus {
@@ -974,9 +979,14 @@ main {
     margin: 0 20px;
   }
   #header .menu-logo img {
-    margin-right: 184px;
-    height: 55%;
-    width: 30%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #header .menu-logo .image {
+    height: auto;
+    width: 300px;
+    margin: auto;
   }
   .menus {
     width: 100%;
@@ -1027,9 +1037,14 @@ main {
     margin: 0 20px;
   }
   #header .menu-logo img {
-    margin-right: calc(100px + 23%);
-    height: 55%;
-    width: 30%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #header .menu-logo .image {
+    height: auto;
+    width: 300px;
+    margin: auto;
   }
   .menus {
     width: 100%;
@@ -1077,9 +1092,14 @@ main {
     margin: 0 20px;
   }
   #header .menu-logo img {
-    margin-right: calc(180px + 50%);
-    height: 55%;
-    width: 30%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #header .menu-logo .image {
+    height: auto;
+    width: 500px;
+    margin: auto;
   }
   .menus {
     width: 100%;
@@ -1113,24 +1133,6 @@ main {
   }
 }
 @media screen and (min-width: 993px) {
-  #header {
-    width: 100%;
-    margin: 0;
-  }
-  #header .menu-logo {
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 20px;
-  }
-  #header .menu-logo img {
-    margin-right: calc(180px + 10%);
-    height: 55%;
-    width: 30%;
-  }
   .categories-box {
     display: flex;
     flex-direction: row;
@@ -1168,24 +1170,6 @@ main {
   }
 }
 @media screen and (min-width: 1024px) {
-  #header {
-    width: 100%;
-    margin: 0;
-  }
-  #header .menu-logo {
-    height: 100px;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 20px;
-  }
-  #header .menu-logo img {
-    margin-right: calc(180px + 24%);
-    height: 55%;
-    width: 30%;
-  }
   .categories-box {
     display: flex;
     flex-direction: row;

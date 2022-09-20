@@ -10,12 +10,20 @@ main {
         display: flex;
         flex-direction: row;
         align-content: center;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
-        margin: 0 0 0 20px;
+        
 
         img {
-            margin-right: 100px;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .image {
+            height: auto;
+            width: 200px;
+            margin: auto;
         }
     }
 }
@@ -235,11 +243,17 @@ main {
             justify-content: space-between;
             align-items: center;
             margin: 0 20px;
-
+            
             img {
-                margin-right: calc(184px );
-                height: 55%;
-                width: 30%;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+    
+            .image {
+                height: auto;
+                width: 300px;
+                margin: auto;
             }
         }
     }
@@ -306,9 +320,15 @@ main {
             margin: 0 20px;
 
             img {
-                margin-right: calc(100px + 23%);
-                height: 55%;
-                width: 30%;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+    
+            .image {
+                height: auto;
+                width: 300px;
+                margin: auto;
             }
         }
     }
@@ -373,9 +393,15 @@ main {
             margin: 0 20px;
 
             img {
-                margin-right: calc(180px + 50%);
-                height: 55%;
-                width: 30%;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+    
+            .image {
+                height: auto;
+                width: 500px;
+                margin: auto;
             }
         }
     }
@@ -424,28 +450,7 @@ main {
     }
 }
 
-@media screen and (min-width: 993px) {
-    #header {
-        width: 100%;
-        margin: 0;
-
-        .menu-logo {
-            height: 100px;
-            display: flex;
-            flex-direction: row;
-            align-content: center;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0 20px;
-
-            img {
-                margin-right: calc(180px + 10%);
-                height: 55%;
-                width: 30%;
-            }
-        }
-    }
-
+@media screen and (min-width: 993px) {        
     .categories-box {
         display: flex;
         flex-direction: row;
@@ -497,27 +502,6 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-    #header {
-        width: 100%;
-        margin: 0;
-
-        .menu-logo {
-            height: 100px;
-            display: flex;
-            flex-direction: row;
-            align-content: center;
-            justify-content: space-between;
-            align-items: center;
-            margin: 0 20px;
-
-            img {
-                margin-right: calc(180px + 24%);
-                height: 55%;
-                width: 30%;
-            }
-        }
-    }
-
     .categories-box {
         display: flex;
         flex-direction: row;
