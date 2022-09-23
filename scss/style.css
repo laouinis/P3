@@ -163,12 +163,10 @@ main .restaurants-container i:active {
   display: flex;
   align-content: center;
   justify-items: center;
-  /* z-index: 100000000; */
   height: 100px;
   width: 100px;
   border-radius: 50%;
   perspective: 800px;
-  /* z-index: 1; */
 }
 .animations .orbit-spinner .orbit {
   position: fixed;

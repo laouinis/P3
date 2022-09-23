@@ -1,6 +1,6 @@
 # P3 ohmyfood web site
 
-## Git command
+## Git command: conf
 
 ### git add
 
